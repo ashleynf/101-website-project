@@ -6,14 +6,12 @@
   font-style: normal;
 }
 
-/****** BASE STYLES ******/
-
 body {
-  color: #2b2b2b;
+  background-color: #f4f4f4;
   font-family: 'Montserrat', sans-serif;
 }
 
-#about, #services, #contact {
+#portfolio, #contact-links {
     height: 600px;
 }
 
@@ -34,24 +32,11 @@ body {
   width: 375px;
 }
 
-/****** HEADER ******/
-
-header {
-  background: #e1dcd8;
-  background-size: contain;
-  height: 600px;
-}
-
-header h1 {
-  color: #828282;
-  font-family: "fg_rakelregular";
-  font-size: 38px;
-  padding: 65px 0 65px 25px;
-}
+/****** NAV ******/
 
 nav {
   float: right;
-  padding: 75px 25px;
+  padding: 0 45px 0 25px
 }
 
 nav ul li{
@@ -61,7 +46,7 @@ nav ul li{
 nav ul li a {
   color: #828282;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: 3px;
   padding-left: 30px;
@@ -69,83 +54,33 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-header h2 {
-  clear: both;
-  color: #828282;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 65px;
-  font-weight: 400;
-  line-height: 70px;
-  padding: 40px 0 20px 25px;
-  text-transform: uppercase;
-  width: 1000px;
-}
+/****** Portfolio ******/
 
-header h2 span {
-  color: #828282;
-  font-style: italic;
-  text-transform: lowercase;
-}
-
-/****** ABOUT ******/
-
-#about {
-  background-color: #f6f4f3;
-}
-
-#about .full-width {
-  padding: 40px 0;
-}
-
-#about h2 {
-  color: #828282;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 34px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  padding-left: 50px;
-  text-transform: uppercase;
-}
-
-#about h2 span {
-  color: #828282;
-  font-style: italic;
-  text-transform: lowercase;
-}
-
-#about p {
-  color: #828282;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 30px;
-  padding: 0 50px 0 50px;
-}
-
-#about img#about-img {
-  border: 12px solid #fff;
-  margin-left: 120px;
-}
-
-/****** SERVICES ******/
-
-#services {
+#portfolio {
   background-color: #e1dcd8;
-  height: 900px;
+  height: 2200px;
   text-align: left;
 }
 
-#services .full-width {
+#portfolio .full-width {
   padding: 40px 0;
 }
 
-#services h2 {
+h1 {
+  color: #828282;
+  font-family: "fg_rakelregular";
+  font-size: 38px;
+  padding: 0 0 65px 60px;
+}
+
+#portfolio h2 {
   color: #828282;
   font-family: 'Cormorant Garamond', serif;
   font-size: 34px;
   font-weight: 400;
   letter-spacing: 1px;
   padding: 0 0 20px 50px;
+  text-align: left;
   text-transform: uppercase;
 }
 
@@ -157,7 +92,7 @@ p {
   line-height: 25px;
 }
 
-#services h3 {
+#portfolio h3 {
   color: #828282;
   font-family: 'Cormorant Garamond', serif;
   font-size: 24px;
@@ -168,7 +103,7 @@ p {
   width: 275px;
 }
 
-#services ul li {
+#portfolio ul li {
   color: #828282;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
@@ -176,58 +111,11 @@ p {
   list-style-type: none;
 }
 
-/****** CONTACT ******/
-
-#contact {
-  background-color: #fff;
-  height: 700px;
-}
-
-#contact .full-width {
-  clear: both;
-  padding: 0;
-}
-
-#contact h2 {
-  color: #828282;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 34px;
-  font-weight: 400;
-  padding: 30px 0 20px 50px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-#contact h3 {
-  color: #828282;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 1px;
-  padding: 0 0 20px 50px;
-}
-
-#contact h3 span {
-  color: #828282;
-  font-style: italic;
-}
-
-#contact img#contact-img {
-  padding-left: 50px;
-}
-
-#form1 {
-  color: #828282;
-  font-family: 'Montserrat', sans-serif;
-  padding-left: 150px;
-}
-
 /****** CONTACT LINKS ******/
 
 #contact-links {
   background-color: #f4f4f4;
-  height: 400px;
+  height: 300px;
   text-align: left;
 }
 
@@ -240,8 +128,8 @@ p {
   font-family: 'Cormorant Garamond', serif;
   font-size: 34px;
   font-weight: 400;
-  padding: 60px 0 20px 50px;
   letter-spacing: 1px;
+  padding: 30px 0 20px 50px;
   text-transform: uppercase;
 }
 
@@ -259,8 +147,8 @@ p {
   line-height: 30px;
   letter-spacing: 1px;
   margin: 0 auto;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
   width: 275px;
 }
 
@@ -272,11 +160,11 @@ p {
   line-height: 25px;
   letter-spacing: 1px;
   margin: 0 auto;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
   width: 275px;
 }
 
 #contact-links a {
-    text-decoration: none;
+  text-decoration: none;
 }
